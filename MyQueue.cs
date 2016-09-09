@@ -14,5 +14,15 @@
 
             return item;
         }
+
+        public void Enqueue(T item)
+        {
+            Add(item);
+        }
+
+        public T Dequeue()
+        {
+            return GetAndRemove();
+        }
     }
 }

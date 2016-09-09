@@ -9,6 +9,12 @@ namespace MyCollection
 
         public virtual int Count => Collection.Count;
 
+        public T this[int index]
+        {
+            get { return Collection[index]; }
+            set { Collection[index] = value; }
+        }
+
         public void Add(T item)
         {
             Collection.Add(item);

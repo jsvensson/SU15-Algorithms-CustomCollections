@@ -65,6 +65,8 @@
     <Compile Include="StackGetAndRemoveTests.cs" />
     <Compile Include="StackGetTests.cs" />
     <Compile Include="StackTests.cs" />
+    <Compile Include="QueueEnqueueDequeueTests.cs" />
+    <Compile Include="StackPushPopTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyCollection.csproj">

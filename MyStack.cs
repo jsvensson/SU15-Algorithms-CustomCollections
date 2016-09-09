@@ -14,5 +14,15 @@
 
             return item;
         }
+
+        public void Push(T item)
+        {
+            Add(item);
+        }
+
+        public T Pop()
+        {
+            return GetAndRemove();
+        }
     }
 }
