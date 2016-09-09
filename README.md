@@ -10,3 +10,9 @@ var stack = new MyStack<int> {1 2 3};
 stack.Push(4);
 int num = stack.Pop();
 ```
+
+## RPN calculator
+
+``` csharp
+double result = RpnCalculator.Calculate("2 3 + 57 * 8,324 /");
+```
