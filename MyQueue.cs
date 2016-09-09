@@ -1,59 +1,18 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyCollection
+﻿namespace MyCollection
 {
-    public class MyQueue<T> : IMyCollection<T>
+    public class MyQueue<T> : MyCollection<T>
     {
-        private List<T> collection;
-
-        public int Count => collection.Count;
-
-        public MyQueue()
+        public override T Get()
         {
-            collection = new List<T>();
+            return Collection[0];
         }
 
-        public void Add(T item)
-        {
-            collection.Add(item);
-        }
-
-        public void Clear()
-        {
-            collection.Clear();
-        }
-
-        public bool Contains(T item)
-        {
-            return collection.Contains(item);
-        }
-
-        public T Get()
-        {
-            return collection[0];
-        }
-
-        public T GetAndRemove()
+        public override T GetAndRemove()
         {
             T item = Get();
-            collection.RemoveAt(0);
+            Collection.RemoveAt(0);
 
             return item;
-        }
-
-        public IEnumerator<T> GetEnumerator()
-        {
-            return ((IEnumerable<T>)collection).GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
         }
     }
 }

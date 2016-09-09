@@ -67,7 +67,7 @@
     <Compile Include="StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyCollection\MyCollection.csproj">
+    <ProjectReference Include="..\MyCollection.csproj">
       <Project>{68bdd335-5e9c-4dd2-adb6-692e3feec905}</Project>
       <Name>MyCollection</Name>
     </ProjectReference>
