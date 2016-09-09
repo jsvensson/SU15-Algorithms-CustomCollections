@@ -20,6 +20,14 @@ namespace MyCollection
             Collection.Add(item);
         }
 
+        public void Add(IEnumerable<T> items)
+        {
+            foreach (T item in items)
+            {
+                Add(item);
+            }
+        }
+
         public abstract T Get();
 
         public abstract T GetAndRemove();
