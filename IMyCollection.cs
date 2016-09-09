@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyCollection
 {
-    interface IMyCollection<T>
+    interface IMyCollection<T> : IEnumerable<T>
     {
         void Add(T item);  // Enqueue/Push
         T Get();  // Peek
