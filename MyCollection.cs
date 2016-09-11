@@ -42,7 +42,7 @@ namespace MyCollection
             return Collection.Contains(item);
         }
 
-        public virtual IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             return ((IEnumerable<T>)Collection).GetEnumerator();
         }

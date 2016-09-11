@@ -11,12 +11,10 @@ namespace RpnDemo
     {
         static void Main(string[] args)
         {
-            string input = null;
-
             do
             {
                 Console.Write(">> ");
-                input = Console.ReadLine().Trim();
+                string input = Console.ReadLine()?.Trim();
 
                 if (string.IsNullOrEmpty(input)) break;
 
